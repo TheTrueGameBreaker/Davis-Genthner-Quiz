@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis Genthner Quiz</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <h1 class="hs">Highscore:
+        <span id="playername"></span>
+        <span id="highestscore"></span>
+    </h1>
+    <h1 class="cs">Current Score:
+        <span id="currentscore"></span>
+    </h1>
+</head>
+<body>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Place Holder 1</button>
+                <button class="btn">Place Holder 2</button>
+                <button class="btn">Place Holder 3</button>
+                <button class="btn">Place Holder 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <Button id="next-btn" class="next-btn btn hide">Next</Button>
+    </div>
+    <div class="gametimer">
+        <p>Time:
+        <span id="time-left"></span>
+        </p>
+    </div>
+</body>
+</html>

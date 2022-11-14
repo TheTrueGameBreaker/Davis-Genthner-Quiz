@@ -1,0 +1,105 @@
+/* This is just a few standar lines of code to format*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Papyrus;
+}
+
+:root {
+    --hue-neutral: 202;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+p {
+    font-weight: bold;
+}
+
+/*This is where the Current Score and  Highscore colors are chosen */
+
+.hs {
+    color: rgb(255, 0, 200);
+}
+
+.cs {
+    color: rgb(189, 0, 0);
+}
+
+/* This is for the bulk of the page */
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 74%);
+}
+
+body.correct {
+    --hue: var(--hue-correct)
+}
+
+body.wrong {
+    --hue: var(--hue-wrong)
+}
+
+.container {
+    width: 1000px;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+/* This is the code based around the buttons */
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue:var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 79%);
+    background-color: hsl(var(--hue), 100%, 84%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct)
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong)
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
